@@ -1,10 +1,10 @@
 import streamlit as st
 from openai import OpenAI 
-import os
+
 
 #connect to openai api
 
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 #set the pagetitle
 
