@@ -4,7 +4,7 @@ import os
 
 #connect to openai api
 
-api_key = os.environ.get("OPENAI_API_KEY")  or st.secrets.get("OPENAI_API_KEY")
+api_key = os.environ.get("OPENAI_API_KEY")  or st.secrets.get["OPENAI_API_KEY"]
 
 client = OpenAI(api_key=api_key)
 
